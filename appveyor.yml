@@ -6,16 +6,19 @@ environment:
   NOT_CRAN: true
   USE_RTOOLS: true
   RETICULATE_TEST_ENVIRONMENTS: 1  
-  PATH: "%PATH%;C:\\MinGW\\bin;C:\\MinGW\\msys\\1.0;C:\\MinGW\\msys\\1.0\\bin"
   matrix:
-    - PYTHON: "C:\\Python27"
-      RETICULATE_PYTHON: "C:\\Python27"
+   #- PYTHON: "C:\\Python27"
+     #RETICULATE_PYTHON: "C:\\Python27"
+     #PATH: "%PATH%;C:\\MinGW\\bin;C:\\MinGW\\msys\\1.0;C:\\MinGW\\msys\\1.0\\bin;C:\\Miniconda-x64\\Scripts"
     - PYTHON: "C:\\Python34"
       RETICULATE_PYTHON: "C:\\Python34"
+      PATH: "%PATH%;C:\\MinGW\\bin;C:\\MinGW\\msys\\1.0;C:\\MinGW\\msys\\1.0\\bin;C:\\Miniconda34-x64\\Scripts"
     - PYTHON: "C:\\Python35"
       RETICULATE_PYTHON: "C:\\Python35"
+      PATH: "%PATH%;C:\\MinGW\\bin;C:\\MinGW\\msys\\1.0;C:\\MinGW\\msys\\1.0\\bin;C:\\Miniconda35-x64\\Scripts"
     - PYTHON: "C:\\Python36"
       RETICULATE_PYTHON: "C:\\Python36"
+      PATH: "%PATH%;C:\\MinGW\\bin;C:\\MinGW\\msys\\1.0;C:\\MinGW\\msys\\1.0\\bin;C:\\Miniconda36-x64\\Scripts"
 
 matrix:
   fast_finish: true
