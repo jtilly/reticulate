@@ -23,5 +23,5 @@ before_install:
   - conda config --set always_yes yes --set changeps1 no
   - conda update -q conda
   - conda info -a
-  - conda create -n python reticulate numpy pandas scipy docutils
+  - conda create -n python reticulate numpy pandas scipy docutils libgcc -c conda-forge
   - source $HOME/miniconda/bin/activate reticulate
